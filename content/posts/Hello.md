@@ -5,6 +5,8 @@ draft: false
 showFullContent: true
 ---
 
+### I'm a fullstack web3 and rust developer.
+
 [About](/about) to learn about me.
 
 [Projects](/projects) to learn about my work.

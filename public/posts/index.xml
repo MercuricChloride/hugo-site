@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blind_Nabler</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on Blind_Nabler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Oct 2022 10:14:25 -0700</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hey There</title>
+      <link>/posts/hello/</link>
+      <pubDate>Wed, 05 Oct 2022 10:14:25 -0700</pubDate>
+      
+      <guid>/posts/hello/</guid>
+      <description>About to learn about me.
+Projects to learn about my work.</description>
+      <content>&lt;p&gt;&lt;a href=&#34;/about&#34;&gt;About&lt;/a&gt; to learn about me.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/projects&#34;&gt;Projects&lt;/a&gt; to learn about my work.&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

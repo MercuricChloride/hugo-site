@@ -1,108 +1,151 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Blind_Nabler</title><link>/</link><description>Recent content on Blind_Nabler</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 05 Oct 2022 10:14:25 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml"/><item><title>Hey There</title><link>/posts/hello/</link><pubDate>Wed, 05 Oct 2022 10:14:25 -0700</pubDate><guid>/posts/hello/</guid><description>About to learn about me.
-Projects to learn about my work.</description><content>&lt;p>&lt;a href="/about">About&lt;/a> to learn about me.&lt;/p>
-&lt;p>&lt;a href="/projects">Projects&lt;/a> to learn about my work.&lt;/p></content></item><item><title>Projects</title><link>/projects/</link><pubDate>Wed, 05 Oct 2022 10:08:58 -0700</pubDate><guid>/projects/</guid><description>Soulbound Labs This is where I am currently doing the majority of my work.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blind_Nabler</title>
+    <link>/</link>
+    <description>Recent content on Blind_Nabler</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 05 Oct 2022 10:14:25 -0700</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hey There</title>
+      <link>/posts/hello/</link>
+      <pubDate>Wed, 05 Oct 2022 10:14:25 -0700</pubDate>
+      
+      <guid>/posts/hello/</guid>
+      <description>About to learn about me.
+Projects to learn about my work.</description>
+      <content>&lt;p&gt;&lt;a href=&#34;/about&#34;&gt;About&lt;/a&gt; to learn about me.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;/projects&#34;&gt;Projects&lt;/a&gt; to learn about my work.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Projects</title>
+      <link>/projects/</link>
+      <pubDate>Wed, 05 Oct 2022 10:08:58 -0700</pubDate>
+      
+      <guid>/projects/</guid>
+      <description>Soulbound Labs This is where I am currently doing the majority of my work.
 LINK: soulbound.xyz
-Soulbound Labs was created to build a better way to do dao governance. Rather than the traditional 1 token = 1 vote governance model. We wanted a way to build a decentralized and flexible meritocracy. Where someone&amp;rsquo;s voting power is determined based off what kind of actions they have performed within the context of the specific dao ecosystem or generalized actions on chain.</description><content>&lt;h2 id="soulbound-labs">Soulbound Labs&lt;/h2>
-&lt;p>&lt;em>This is where I am currently doing the majority of my work.&lt;/em>&lt;/p>
-&lt;p>&lt;a href="https://soulbound.xyz">LINK: soulbound.xyz&lt;/a>&lt;/p>
-&lt;p>Soulbound Labs was created to build a better way to do dao governance. Rather than the traditional 1 token = 1 vote governance model. We wanted a way to build a decentralized and flexible meritocracy. Where someone&amp;rsquo;s voting power is determined based off what kind of actions they have performed within the context of the specific dao ecosystem or generalized actions on chain. This is super hard and expensive to do via traditional smart contract code so we needed to build a better way. We chose the graph&amp;rsquo;s network to allow daos to build subgraphs, with different &amp;ldquo;reputation pathways&amp;rdquo; that mint unique non-transferable (soulbound) NFT&amp;rsquo;s to represent varying voting power, based on how difficult or impactful an on-chain action is. Think of it similar to an RPG skilltree.&lt;/p>
-&lt;p>However, we had to build two important pieces to make this idea possible.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;h3 id="a-subgraph-bridge">A Subgraph Bridge&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>TLDR: A customizable way to bridge off chain subgraph data and put it on chain. Enabling the graph&amp;rsquo;s network to function as an L2.&lt;/p>
-&lt;p>A subgraph simply defined, is some computation put on top of existing blockchain data, that allows you to filter the raw data and put it into a custom graphQL api so you can find what data you care about. But the problem here is that this is all done off chain, and we can&amp;rsquo;t just take someone&amp;rsquo;s word that what they say is correct. So we used the graph&amp;rsquo;s existing crypto-economic system to have gurantees of correctness of results. Indexers, when they index data to create a subgraph have to stake $GRT, and should their data be wrong, they will get slashed and lose all of that money. We take a similar approach with the attestation system.&lt;/p>
-&lt;p>When an indexer wants to provide a query result to a subgraph bridge they must stake an amount of GRT set by the subgraph bridge. This is a customizeable amount because a defi application will not need the same level of security as a social media app. Should their result be proven false, they will get slashed and their GRT liquidated.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;h3 id="a-no-code-interface-for-building-subgraphs">A no code interface for building subgraphs&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>Subgraphs are a fantastic tool, but the new user experience for building them could definitely use some help. The main reason for this is that writing subgraphs is done in the programming language assemblyscript. This language looks similar to typescript, but has some strange quirks when using it that can make it a headache for a new developer to use.&lt;/p>
-&lt;p>We also believe that building reputation pathways should not be programmer exclusive. As anyone who has participated in a dao can know that not all important players in a dao are programmers.&lt;/p>
-&lt;p>So to make an inclusive user experience, we built a node based editor that makes it easy to track what on chain reputation actions you should care about, and how much voting power to reward for it.&lt;/p>
-&lt;p>And because these reputation pathways are just subgraphs, it makes it super easy to fork or modify existing reputation pathways, should the dao decide that the current model is broken or outdated. Simply deploy a new subgraphs bridge.&lt;/p>
-&lt;h2 id="martian-premier-league">Martian Premier League&lt;/h2>
-&lt;p>&lt;a href="https://martianpremierleague.com">LINK: martianpremierleague.com&lt;/a>&lt;/p>
-&lt;p>What is the first thing you must do after colonizing mars? Obviously build a football league!&lt;/p>
-&lt;p>The MPL is an NFT project following a football league on mars shortly after colonization. I did a variety of work for them during their launch event &amp;ldquo;Bootcamp&amp;rdquo;. The majority of it being website interface building for their risky games, as well as smart contract writing and testing for said risky games. It was a ton of fun, albeit a bit intense given the tight turnaround time of 1 game per week, but I learned a lot from the whole experience and my time there.&lt;/p>
-&lt;h2 id="ethrebuild">Eth.Rebuild&lt;/h2>
-&lt;p>A Typescript Rebuild of Austin Griffith&amp;rsquo;s eth.build. I loved this project and it was a super useful learning tool for me when I was getting into web3. But unfortunately it followed the fate of most vanilla JS projects and is now unmaintained. So I rebuilt the project from scratch in typescript, using minimal frameworks for maximum project lifespan. With future maintainability in mind.&lt;/p>
-&lt;h2 id="moonshot-collective">Moonshot Collective&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;h3 id="public-goods-party">Public Goods Party&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>I championed the building of the MVP version of the decentralized Gitcoin Grants 2.0 Ecosystem. Allows anyone to make their own QF public goods funding rounds for their own ecosystem, while hooking into the state of the globally accessible grants registry.&lt;/p>
-&lt;h2 id="buidl-guidl--personal-projects">Buidl Guidl / Personal Projects:&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;h3 id="svg-fractal-nft">SVG Fractal NFT&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>An interesting project with on chain NFT&amp;rsquo;s&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;h3 id="every-nft-ever">Every NFT Ever&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>A meta nft art project I built trying to highlight why NFT&amp;rsquo;s are important, and how the art is not what makes an NFT an NFT. Allowed a user to duplicate any NFT on mainnet ethereum for free.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;h3 id="polygon-state-sync-starter-kit">Polygon State Sync Starter Kit&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>A demo showcasing how to use the polygon network&amp;rsquo;s state sync feature, for secure cross chain transactions.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;h3 id="harberger-tax-nft">Harberger Tax NFT&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>A showcase of a novel taxation method that attempts to bridge a truly free market while still allocating money towards public goods. Built after reading &lt;em>Green Pilled&lt;/em> By Kevin Owocki&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;h3 id="100-year-aging-nft">100 Year Aging NFT&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>A dynamic nft that ages over the course of 100 years, until it hits it&amp;rsquo;s final stage of decay in the year 2121.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;h3 id="bonez">Bonez&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>A fork of my 100 year Aging NFT build for Halloween 2021. It&amp;rsquo;s a corpse that progresses through all 5 stages of decay, until finally you are left with a randomly generated corpse.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;h3 id="larpminter">LarpMinter&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>A site that allows conditional minting of a 3d version your &amp;ldquo;Eth-Bot&amp;rdquo; or &amp;ldquo;Moloch-Bot&amp;rdquo; for holders of either NFT. Built for gitcoin during their Greatest Larp Event in 2021.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;h3 id="mvp-11-nft">MVP 1/1 NFT&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>A stripped back and cheap contract designed for 1/1 NFT deployment, without all of the traditional bloat you have with an openzeppelin ERC-721 contract, while also being human readable. Built for songadaymann, with the concept being an artist can encode their music in ABC notation and mint it as a 1/1 for cheap.&lt;/p>
-&lt;h2 id="freelance-work">Freelance Work&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;h3 id="operator-la">Operator LA&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>An experimental artist duo from Berlin and Los Angeles. I was commissioned to build a few different NFT&amp;rsquo;s for them. One of which has been featured in Vogue.&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;h3 id="assorted-nft-and-token-projects">Assorted NFT and token projects&lt;/h3>
-&lt;/li>
-&lt;/ul>
-&lt;p>I have also done some work for not super notable NFT and token projects.&lt;/p></content></item><item><title>About Me</title><link>/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/about/</guid><description>I&amp;rsquo;m a fullstack web3 and rust developer. I love working on user-respecting technology that exists to solve a problem rather than make a quick profit. So naturally I love Linux and all things FOSS. Nowadays web3 is my main focus for professional and personal work. The technology isn&amp;rsquo;t perfect yet, but the ability for people to conduct business with complex deterministic logic in an adversarial environment without trust or a central authority is an incredibly powerful idea that excites me deeply and inspires me to help push the technology forward.</description><content>&lt;h3 id="im-a-fullstack-web3-and-rust-developer">I&amp;rsquo;m a fullstack web3 and rust developer.&lt;/h3>
-&lt;p>I love working on user-respecting technology that exists to solve a problem rather than make a quick profit. So naturally I love Linux and all things FOSS. Nowadays web3 is my main focus for professional and personal work. The technology isn&amp;rsquo;t perfect yet, but the ability for people to conduct business with complex deterministic logic in an adversarial environment without trust or a central authority is an incredibly powerful idea that excites me deeply and inspires me to help push the technology forward.&lt;/p>
-&lt;p>I was first exposed to cryptocurrencies back in 2013 when Silk Road was shut down. But it wasn&amp;rsquo;t until early 2020 when I started becoming an Ethereum power user that my eyes were truly opened. I learned about smart contracts, defi, and everything else in the space. And once I found Austin Griffith and Scaffold-eth, I was truly hooked. I spent all of my free time building, experimenting, and learning by doing. I believe in rapid prototyping and getting things to market as MVPs, as it allows you to learn so much in a very small amount of time. As a result, I have gathered a large amount of experience in many domains, from building and shipping over 12 projects of my own, helping my colleagues with their own projects, and mentoring new developers. And I have no plans of slowing down.&lt;/p>
-&lt;h4 id="if-you-have-a-problem-that-you-want-to-solve-i-would-happy-to-share-my-skills-and-experience-to-help-make-it-a-reality">If you have a problem that you want to solve I would happy to share my skills and experience to help make it a reality.&lt;/h4>
-&lt;h4 id="contacts">Contacts:&lt;/h4>
-&lt;p>&lt;a href="https://github.com/mercuricchloride">Github&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://twitter.com/blind_nabler">Twitter&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://t.me/blind_nabler">Telegram&lt;/a>&lt;/p></content></item></channel></rss>
+Soulbound Labs was created to build a better way to do dao governance. Rather than the traditional 1 token = 1 vote governance model. We wanted a way to build a decentralized and flexible meritocracy. Where someone&amp;rsquo;s voting power is determined based off what kind of actions they have performed within the context of the specific dao ecosystem or generalized actions on chain.</description>
+      <content>&lt;h2 id=&#34;soulbound-labs&#34;&gt;Soulbound Labs&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;This is where I am currently doing the majority of my work.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://soulbound.xyz&#34;&gt;LINK: soulbound.xyz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Soulbound Labs was created to build a better way to do dao governance. Rather than the traditional 1 token = 1 vote governance model. We wanted a way to build a decentralized and flexible meritocracy. Where someone&amp;rsquo;s voting power is determined based off what kind of actions they have performed within the context of the specific dao ecosystem or generalized actions on chain. This is super hard and expensive to do via traditional smart contract code so we needed to build a better way. We chose the graph&amp;rsquo;s network to allow daos to build subgraphs, with different &amp;ldquo;reputation pathways&amp;rdquo; that mint unique non-transferable (soulbound) NFT&amp;rsquo;s to represent varying voting power, based on how difficult or impactful an on-chain action is. Think of it similar to an RPG skilltree.&lt;/p&gt;
+&lt;p&gt;However, we had to build two important pieces to make this idea possible.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;a-subgraph-bridge&#34;&gt;A Subgraph Bridge&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;TLDR: A customizable way to bridge off chain subgraph data and put it on chain. Enabling the graph&amp;rsquo;s network to function as an L2.&lt;/p&gt;
+&lt;p&gt;A subgraph simply defined, is some computation put on top of existing blockchain data, that allows you to filter the raw data and put it into a custom graphQL api so you can find what data you care about. But the problem here is that this is all done off chain, and we can&amp;rsquo;t just take someone&amp;rsquo;s word that what they say is correct. So we used the graph&amp;rsquo;s existing crypto-economic system to have gurantees of correctness of results. Indexers, when they index data to create a subgraph have to stake $GRT, and should their data be wrong, they will get slashed and lose all of that money. We take a similar approach with the attestation system.&lt;/p&gt;
+&lt;p&gt;When an indexer wants to provide a query result to a subgraph bridge they must stake an amount of GRT set by the subgraph bridge. This is a customizeable amount because a defi application will not need the same level of security as a social media app. Should their result be proven false, they will get slashed and their GRT liquidated.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;a-no-code-interface-for-building-subgraphs&#34;&gt;A no code interface for building subgraphs&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Subgraphs are a fantastic tool, but the new user experience for building them could definitely use some help. The main reason for this is that writing subgraphs is done in the programming language assemblyscript. This language looks similar to typescript, but has some strange quirks when using it that can make it a headache for a new developer to use.&lt;/p&gt;
+&lt;p&gt;We also believe that building reputation pathways should not be programmer exclusive. As anyone who has participated in a dao can know that not all important players in a dao are programmers.&lt;/p&gt;
+&lt;p&gt;So to make an inclusive user experience, we built a node based editor that makes it easy to track what on chain reputation actions you should care about, and how much voting power to reward for it.&lt;/p&gt;
+&lt;p&gt;And because these reputation pathways are just subgraphs, it makes it super easy to fork or modify existing reputation pathways, should the dao decide that the current model is broken or outdated. Simply deploy a new subgraphs bridge.&lt;/p&gt;
+&lt;h2 id=&#34;martian-premier-league&#34;&gt;Martian Premier League&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://martianpremierleague.com&#34;&gt;LINK: martianpremierleague.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;What is the first thing you must do after colonizing mars? Obviously build a football league!&lt;/p&gt;
+&lt;p&gt;The MPL is an NFT project following a football league on mars shortly after colonization. I did a variety of work for them during their launch event &amp;ldquo;Bootcamp&amp;rdquo;. The majority of it being website interface building for their risky games, as well as smart contract writing and testing for said risky games. It was a ton of fun, albeit a bit intense given the tight turnaround time of 1 game per week, but I learned a lot from the whole experience and my time there.&lt;/p&gt;
+&lt;h2 id=&#34;ethrebuild&#34;&gt;Eth.Rebuild&lt;/h2&gt;
+&lt;p&gt;A Typescript Rebuild of Austin Griffith&amp;rsquo;s eth.build. I loved this project and it was a super useful learning tool for me when I was getting into web3. But unfortunately it followed the fate of most vanilla JS projects and is now unmaintained. So I rebuilt the project from scratch in typescript, using minimal frameworks for maximum project lifespan. With future maintainability in mind.&lt;/p&gt;
+&lt;h2 id=&#34;moonshot-collective&#34;&gt;Moonshot Collective&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;public-goods-party&#34;&gt;Public Goods Party&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I championed the building of the MVP version of the decentralized Gitcoin Grants 2.0 Ecosystem. Allows anyone to make their own QF public goods funding rounds for their own ecosystem, while hooking into the state of the globally accessible grants registry.&lt;/p&gt;
+&lt;h2 id=&#34;buidl-guidl--personal-projects&#34;&gt;Buidl Guidl / Personal Projects:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;svg-fractal-nft&#34;&gt;SVG Fractal NFT&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An interesting project with on chain NFT&amp;rsquo;s&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;every-nft-ever&#34;&gt;Every NFT Ever&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A meta nft art project I built trying to highlight why NFT&amp;rsquo;s are important, and how the art is not what makes an NFT an NFT. Allowed a user to duplicate any NFT on mainnet ethereum for free.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;polygon-state-sync-starter-kit&#34;&gt;Polygon State Sync Starter Kit&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A demo showcasing how to use the polygon network&amp;rsquo;s state sync feature, for secure cross chain transactions.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;harberger-tax-nft&#34;&gt;Harberger Tax NFT&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A showcase of a novel taxation method that attempts to bridge a truly free market while still allocating money towards public goods. Built after reading &lt;em&gt;Green Pilled&lt;/em&gt; By Kevin Owocki&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;100-year-aging-nft&#34;&gt;100 Year Aging NFT&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A dynamic nft that ages over the course of 100 years, until it hits it&amp;rsquo;s final stage of decay in the year 2121.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;bonez&#34;&gt;Bonez&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A fork of my 100 year Aging NFT build for Halloween 2021. It&amp;rsquo;s a corpse that progresses through all 5 stages of decay, until finally you are left with a randomly generated corpse.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;larpminter&#34;&gt;LarpMinter&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A site that allows conditional minting of a 3d version your &amp;ldquo;Eth-Bot&amp;rdquo; or &amp;ldquo;Moloch-Bot&amp;rdquo; for holders of either NFT. Built for gitcoin during their Greatest Larp Event in 2021.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;mvp-11-nft&#34;&gt;MVP 1/1 NFT&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A stripped back and cheap contract designed for 1/1 NFT deployment, without all of the traditional bloat you have with an openzeppelin ERC-721 contract, while also being human readable. Built for songadaymann, with the concept being an artist can encode their music in ABC notation and mint it as a 1/1 for cheap.&lt;/p&gt;
+&lt;h2 id=&#34;freelance-work&#34;&gt;Freelance Work&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;operator-la&#34;&gt;Operator LA&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;An experimental artist duo from Berlin and Los Angeles. I was commissioned to build a few different NFT&amp;rsquo;s for them. One of which has been featured in Vogue.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h3 id=&#34;assorted-nft-and-token-projects&#34;&gt;Assorted NFT and token projects&lt;/h3&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have also done some work for not super notable NFT and token projects.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>I&amp;rsquo;m a fullstack web3 and rust developer. I love working on user-respecting technology that exists to solve a problem rather than make a quick profit. So naturally I love Linux and all things FOSS. Nowadays web3 is my main focus for professional and personal work. The technology isn&amp;rsquo;t perfect yet, but the ability for people to conduct business with complex deterministic logic in an adversarial environment without trust or a central authority is an incredibly powerful idea that excites me deeply and inspires me to help push the technology forward.</description>
+      <content>&lt;h3 id=&#34;im-a-fullstack-web3-and-rust-developer&#34;&gt;I&amp;rsquo;m a fullstack web3 and rust developer.&lt;/h3&gt;
+&lt;p&gt;I love working on user-respecting technology that exists to solve a problem rather than make a quick profit. So naturally I love Linux and all things FOSS. Nowadays web3 is my main focus for professional and personal work. The technology isn&amp;rsquo;t perfect yet, but the ability for people to conduct business with complex deterministic logic in an adversarial environment without trust or a central authority is an incredibly powerful idea that excites me deeply and inspires me to help push the technology forward.&lt;/p&gt;
+&lt;p&gt;I was first exposed to cryptocurrencies back in 2013 when Silk Road was shut down. But it wasn&amp;rsquo;t until early 2020 when I started becoming an Ethereum power user that my eyes were truly opened. I learned about smart contracts, defi, and everything else in the space. And once I found Austin Griffith and Scaffold-eth, I was truly hooked. I spent all of my free time building, experimenting, and learning by doing. I believe in rapid prototyping and getting things to market as MVPs, as it allows you to learn so much in a very small amount of time. As a result, I have gathered a large amount of experience in many domains, from building and shipping over 12 projects of my own, helping my colleagues with their own projects, and mentoring new developers. And I have no plans of slowing down.&lt;/p&gt;
+&lt;h4 id=&#34;if-you-have-a-problem-that-you-want-to-solve-i-would-happy-to-share-my-skills-and-experience-to-help-make-it-a-reality&#34;&gt;If you have a problem that you want to solve I would happy to share my skills and experience to help make it a reality.&lt;/h4&gt;
+&lt;h4 id=&#34;contacts&#34;&gt;Contacts:&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/mercuricchloride&#34;&gt;Github&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/blind_nabler&#34;&gt;Twitter&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://t.me/blind_nabler&#34;&gt;Telegram&lt;/a&gt;&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

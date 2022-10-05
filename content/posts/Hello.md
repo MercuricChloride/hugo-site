@@ -1,7 +1,9 @@
 ---
-title: "Welcome"
-date: 2022-10-04T10:14:25-07:00
+title: "Hey There"
+date: 2022-10-05T10:14:25-07:00
 draft: false
 ---
 
-[About](about) to learn more about me, projects to learn about my work.
+[About](/about) to learn about me.
+
+[Projects](/projects) to learn about my work.

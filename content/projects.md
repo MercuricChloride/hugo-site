@@ -2,9 +2,10 @@
 title: "Projects"
 date: 2022-10-05T10:08:58-07:00
 draft: false
+TOC: true
 ---
 
-# Soulbound Labs
+## Soulbound Labs
 
 _This is where I am currently doing the majority of my work._
 
@@ -32,7 +33,7 @@ So to make an inclusive user experience, we built a node based editor that makes
 
 And because these reputation pathways are just subgraphs, it makes it super easy to fork or modify existing reputation pathways, should the dao decide that the current model is broken or outdated. Simply deploy a new subgraphs bridge.
 
-# Martian Premier League
+## Martian Premier League
 
 [LINK: martianpremierleague.com](https://martianpremierleague.com)
 
@@ -40,17 +41,17 @@ What is the first thing you must do after colonizing mars? Obviously build a foo
 
 The MPL is an NFT project following a football league on mars shortly after colonization. I did a variety of work for them during their launch event "Bootcamp". The majority of it being website interface building for their risky games, as well as smart contract writing and testing for said risky games. It was a ton of fun, albeit a bit intense given the tight turnaround time of 1 game per week, but I learned a lot from the whole experience and my time there.
 
-# Eth.Rebuild
+## Eth.Rebuild
 
 A Typescript Rebuild of Austin Griffith's eth.build. I loved this project and it was a super useful learning tool for me when I was getting into web3. But unfortunately it followed the fate of most vanilla JS projects and is now unmaintained. So I rebuilt the project from scratch in typescript, using minimal frameworks for maximum project lifespan. With future maintainability in mind.
 
-# Moonshot Collective
+## Moonshot Collective
 
 - ### Public Goods Party
 
 I championed the building of the MVP version of the decentralized Gitcoin Grants 2.0 Ecosystem. Allows anyone to make their own QF public goods funding rounds for their own ecosystem, while hooking into the state of the globally accessible grants registry.
 
-# Buidl Guidl / Personal Projects:
+## Buidl Guidl / Personal Projects:
 
 - ### SVG Fractal NFT
 
@@ -84,7 +85,7 @@ A site that allows conditional minting of a 3d version your "Eth-Bot" or "Moloch
 
 A stripped back and cheap contract designed for 1/1 NFT deployment, without all of the traditional bloat you have with an openzeppelin ERC-721 contract, while also being human readable. Built for songadaymann, with the concept being an artist can encode their music in ABC notation and mint it as a 1/1 for cheap.
 
-# Freelance Work
+## Freelance Work
 
 - ### Operator LA
 

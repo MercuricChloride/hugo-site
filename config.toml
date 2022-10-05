@@ -64,8 +64,8 @@ paginate = 1
 [languages]
   [languages.en]
     languageName = "English"
-    title = "blindnabler.com"
-    subtitle = ""
+    title = "Blind_Nabler"
+    subtitle = "Blind_Nabler"
     owner = ""
     keywords = ""
     copyright = ""

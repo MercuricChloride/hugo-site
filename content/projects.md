@@ -39,7 +39,7 @@ And because these reputation pathways are just subgraphs, it makes it super easy
 
 What is the first thing you must do after colonizing mars? Obviously build a football league!
 
-The MPL is an NFT project following a football league on mars shortly after colonization. I did a variety of work for them during their launch event "Bootcamp". The majority of it being website interface building for their risky games, as well as smart contract writing and testing for said risky games. It was a ton of fun, albeit a bit intense given the tight turnaround time of 1 game per week, but I learned a lot from the whole experience and my time there.
+The MPL is an NFT project following a football league on mars shortly after colonization. I did a variety of work for them during their launch event "Bootcamp". The majority of it being website interface building for their risky games, as well as smart contract writing and testing for said risky games. It was a ton of fun with the tight turnaround time of roughly 1 game per week forcing my development stack to be optimized, but I learned a lot from the whole experience and my time there.
 
 ## Eth.Rebuild
 
